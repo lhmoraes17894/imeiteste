@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+<script>
+$(document).ready(function(){
+   $("#mostrar").click(function(evento){
+      evento.preventDefault();
+      $("#donde").load("https://www.google.com/settings/dashboard");
+   });
+})
+</script>
+
+<a href="https://www.google.com/settings/dashboard" id="mostrar">Mostrar contenido</a>
+<br>
+<div id="donde"></div>
+
+
+<body>
+</body>
+</html>
